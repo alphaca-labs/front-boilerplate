@@ -15,7 +15,7 @@ module.exports = {
     body: '변경 사항에 대한 자세한 설명을 작성해주세요 (옵션). "enter"를 두 번 눌러 종료할 수 있습니다:\n',
     footer:
       "이 변경 사항과 관련된 이슈가 있다면, 그 이슈 번호를 작성해주세요 (옵션):\n",
+    confirmCommit: "", // 빈 문자열로 설정하여 비활성화
   },
-  allowCustomScopes: true,
   footerPrefix: "ISSUES CLOSED:",
 };
