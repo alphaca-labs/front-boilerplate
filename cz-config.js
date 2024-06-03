@@ -10,12 +10,12 @@ module.exports = {
   ],
   messages: {
     type: "어떤 종류의 변경 사항인가요?",
-    scope: "변경 사항의 범위는 무엇인가요? (옵션)",
     subject: "변경 사항에 대해 간결하고 명확한 설명을 작성해주세요:\n",
     body: '변경 사항에 대한 자세한 설명을 작성해주세요 (옵션). "enter"를 두 번 눌러 종료할 수 있습니다:\n',
     footer:
       "이 변경 사항과 관련된 이슈가 있다면, 그 이슈 번호를 작성해주세요 (옵션):\n",
-    confirmCommit: "", // 빈 문자열로 설정하여 비활성화
   },
+  skipEmptyScopes: true,
+  skipQuestions: ["confirmCommit"],
   footerPrefix: "ISSUES CLOSED:",
 };
