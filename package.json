@@ -10,8 +10,8 @@
     "version-packages": "changeset version",
     "release": "turbo run build --filter=docs^... && changeset publish",
     "prepare": "husky",
-    "commitlint": "commitlint --edit $1",
-    "commitizen": "cz"
+    "commitlint": "commitlint --edit",
+    "commitizen": "exec < /dev/tty && git cz --hook || true"
   },
   "config": {
     "commitizen": {
