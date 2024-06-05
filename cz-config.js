@@ -16,6 +16,5 @@ module.exports = {
       "이 변경 사항과 관련된 이슈가 있다면, 그 이슈 번호를 작성해주세요 (옵션):\n",
   },
   skipEmptyScopes: true,
-  skipQuestions: ["confirmCommit"],
   footerPrefix: "ISSUES CLOSED:",
 };
