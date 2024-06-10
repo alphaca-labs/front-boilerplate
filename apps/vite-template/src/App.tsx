@@ -9,7 +9,7 @@ function App() {
         "Content-Type": "application/json",
       },
     })
-      .then((response: ApiResponse) => {
+      .then((response) => {
         return response.json();
       })
       .then((data) => {

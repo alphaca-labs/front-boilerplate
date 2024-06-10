@@ -190,6 +190,9 @@ importers:
 
   packages/util-pack:
     devDependencies:
+      '@alphaca-labs/typescript-config':
+        specifier: workspace:*
+        version: link:../typescript-config
       clean-package:
         specifier: 2.2.0
         version: 2.2.0
