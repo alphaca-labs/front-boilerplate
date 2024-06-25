@@ -10,10 +10,10 @@
     "build": "rm -rf ./dist && tsup src --dts"
   },
   "devDependencies": {
-    "typescript": "^4.9.5",
-    "tsup": "6.4.0",
+    "@alphaca-labs/typescript-config": "workspace:*",
     "clean-package": "2.2.0",
-    "@alphaca-labs/typescript-config": "workspace:*"
+    "tsup": "6.4.0",
+    "typescript": "^4.9.5"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +26,8 @@
       "esm"
     ]
   },
-  "clean-package": "../../clean-package.config.json"
+  "clean-package": "../../clean-package.config.json",
+  "dependencies": {
+    "dayjs": "^1.11.11"
+  }
 }
