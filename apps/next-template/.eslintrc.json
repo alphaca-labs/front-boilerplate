@@ -1,0 +1,3 @@
+{
+  "extends": ["@alphaca-labs/eslint-config/next.js"]
+}

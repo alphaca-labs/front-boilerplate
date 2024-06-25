@@ -5,7 +5,7 @@ import readResponseBody from "./readResponseBody";
 
 export async function fetcher<SuccessBody, FailureBody = unknown>(
   url: string,
-  options: RequestOptions
+  options: RequestOptions,
 ): Promise<HttpResponse<SuccessBody, FailureBody>> {
   const { retryable, method = HttpMethods.GET } = options;
 

@@ -10,13 +10,13 @@ function makeRequestParams(
     headers: customHeaders,
     retryable: _,
     ...rest
-  }: RequestOptions
+  }: RequestOptions,
 ): [string, RequestInit | undefined] {
   const baseUrl: string = useEnvUrl ? getBaseUrl() : "";
 
   if (useEnvUrl && !baseUrl) {
     throw new Error(
-      "Insufficient environment variables in `.env.*` files\n- API_URI_BASE"
+      "Insufficient environment variables in `.env.*` files\n- API_URI_BASE",
     );
   }
 

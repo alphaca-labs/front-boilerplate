@@ -8,7 +8,7 @@ async function retryer(
   url: string,
   requestInit: RequestInit | undefined,
   remainRetry: number,
-  retryCount: number
+  retryCount: number,
 ): Promise<Response> {
   const response = await fetch(url, requestInit);
 
@@ -21,8 +21,8 @@ async function retryer(
     setTimeout(
       resolve,
       // 지수 백오프를 적용하여 재시도 간격을 늘립니다.
-      100 * (Math.pow(2, retryCount - remainRetry) + jitterDelay)
-    )
+      100 * (Math.pow(2, retryCount - remainRetry) + jitterDelay),
+    ),
   );
 
   return retryer(url, requestInit, remainRetry - 1, retryCount);

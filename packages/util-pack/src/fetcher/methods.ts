@@ -4,13 +4,13 @@ import { HttpMethods, HttpResponse, RequestOptions } from "./fetcher.type";
 function addMethod(
   fetcher: <SuccessBody, FailureBody = unknown>(
     url: string,
-    options: RequestOptions
+    options: RequestOptions,
   ) => Promise<HttpResponse<SuccessBody, FailureBody>>,
-  method: HttpMethods
+  method: HttpMethods,
 ) {
   return <SuccessBody, FailureBody = unknown>(
     url: string,
-    options?: RequestOptions
+    options?: RequestOptions,
   ) => fetcher<SuccessBody, FailureBody>(url, { ...options, method });
 }
 
