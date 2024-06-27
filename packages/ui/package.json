@@ -4,6 +4,7 @@
   "sideEffects": false,
   "license": "MIT",
   "exports": {
+    "./styles.css": "./dist/styles.css",
     "./button": {
       "types": "./src/button.tsx",
       "import": "./dist/button.mjs",
@@ -18,10 +19,11 @@
   },
   "devDependencies": {
     "@alphaca-labs/eslint-config": "workspace:*",
+    "@alphaca-labs/typescript-config": "workspace:*",
+    "@pandacss/dev": "^0.41.0",
     "@types/react": "^18.2.61",
     "@types/react-dom": "^18.2.19",
     "eslint": "^8.57.0",
-    "@alphaca-labs/typescript-config": "workspace:*",
     "tsup": "^8.0.2",
     "typescript": "^5.3.3"
   },

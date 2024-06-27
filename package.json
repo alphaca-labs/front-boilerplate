@@ -12,7 +12,8 @@
     "prepare": "husky",
     "commitlint": "commitlint --edit",
     "commitizen": "exec < /dev/tty && git cz --hook || true",
-    "test": "jest"
+    "test": "jest",
+    "ui:prepare": "cd packages/ui && panda codegen"
   },
   "config": {
     "commitizen": {
@@ -26,6 +27,7 @@
     "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@pandacss/dev": "^0.41.0",
     "@types/jest": "^29.5.12",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
