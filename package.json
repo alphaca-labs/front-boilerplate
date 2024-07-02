@@ -1,5 +1,6 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
@@ -20,7 +21,7 @@
       "path": "cz-customizable"
     },
     "cz-customizable": {
-      "config": "./cz-config.js"
+      "config": "./cz-config.cjs"
     }
   },
   "devDependencies": {
