@@ -19,7 +19,7 @@ jobs:
           node-version: "18"
 
       - name: Install dependencies
-        run: npm ainstall
+        run: npm install
 
       - name: Generate SVG Components
         run: ts-node ./scripts/icon-generator.ts
