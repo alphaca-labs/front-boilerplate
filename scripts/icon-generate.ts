@@ -1,7 +1,12 @@
 import fs from "fs";
 import path from "path";
 
-const iconsJsonPath = path.resolve(__dirname, "icons.json");
+const iconsJsonPath = path.resolve(
+  __dirname,
+  "packages",
+  "icons",
+  "icons.json"
+);
 const outputDir = path.resolve(__dirname, "src", "components", "icons");
 
 if (!fs.existsSync(outputDir)) {
