@@ -4,6 +4,7 @@
     "module": "ESNext",
     "esModuleInterop": true,
     "moduleResolution": "node",
+    "types": ["node"],
     "strict": true,
     "importHelpers": false,
     "noEmitHelpers": false,

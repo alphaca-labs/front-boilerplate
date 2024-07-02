@@ -29,6 +29,7 @@
     "@commitlint/config-conventional": "^19.2.2",
     "@pandacss/dev": "^0.41.0",
     "@types/jest": "^29.5.12",
+    "@types/node": "^20",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
