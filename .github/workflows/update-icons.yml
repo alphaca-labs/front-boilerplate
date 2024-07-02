@@ -18,14 +18,17 @@ jobs:
         with:
           node-version: "18"
 
+      - name: Install pnpm
+        run: npm install -g pnpm
+
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Generate SVG Components
-        run: ts-node ./scripts/icon-generator.ts
+        run: pnpm exec ts-node ./scripts/icon-generator.ts
 
       - name: Generate Index File
-        run: ts-node ./scripts/index.ts
+        run: pnpm exec ts-node ./scripts/index.ts
 
       - name: Commit and push changes
         run: |
