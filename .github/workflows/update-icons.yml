@@ -25,10 +25,10 @@ jobs:
         run: pnpm install
 
       - name: Generate SVG Components
-        run: pnpm exec ts-node --loader ts-node/esm ./scripts/icon-generator.ts
+        run: pnpm exec ts-node-esm ./scripts/icon-generator.ts
 
       - name: Generate Index File
-        run: pnpm exec ts-node --loader ts-node/esm ./scripts/index.ts
+        run: pnpm exec ts-node-esm ./scripts/index.ts
 
       - name: Commit and push changes
         run: |
