@@ -21,7 +21,7 @@
       "path": "cz-customizable"
     },
     "cz-customizable": {
-      "config": "./cz-config.js"
+      "config": "./cz-config.cjs"
     }
   },
   "devDependencies": {
