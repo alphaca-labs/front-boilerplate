@@ -30,7 +30,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Generate SVG Components
-        run: pnpm ts-node-esm --project tsconfig.json ./scripts/icon-generator.ts
+        run: node --loader ts-node/esm ./scripts/icon-generator.ts
 
       - name: Commit and push changes
         env:
