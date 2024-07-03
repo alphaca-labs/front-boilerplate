@@ -21,6 +21,10 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
 
+      - name: Add pnpm to PATH
+        shell: bash
+        run: echo 'export PATH=$(pnpm env get-bin-dir):$PATH' >> $GITHUB_ENV
+
       - name: Install ts-node globally
         run: pnpm add -g ts-node
 
