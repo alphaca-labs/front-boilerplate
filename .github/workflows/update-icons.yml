@@ -21,11 +21,14 @@ jobs:
       - name: Install pnpm
         run: npm install -g pnpm
 
+      - name: Install ts-node globally
+        run: pnpm add -g ts-node
+
       - name: Install dependencies
         run: pnpm install
 
       - name: Generate SVG Components
-        run: pnpm ts-node-esm --loader ts-node/esm ./scripts/icon-generator.ts
+        run: pnpm ts-node-esm  ./scripts/icon-generator.ts
 
       - name: Commit and push changes
         env:
