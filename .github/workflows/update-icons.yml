@@ -25,15 +25,13 @@ jobs:
         run: pnpm install
 
       - name: Generate SVG Components
-        run: node --loader ts-node/esm --experimental-specifier-resolution=node ./scripts/icon-generator.ts
-
-      - name: Generate Index File
-        run: node --loader ts-node/esm --experimental-specifier-resolution=node ./scripts/index.ts
+        run: ts-node-esm ./scripts/icon-generator.ts
 
       - name: Commit and push changes
         env:
           HUSKY: 0
           CI: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
